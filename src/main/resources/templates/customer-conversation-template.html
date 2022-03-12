@@ -1,0 +1,48 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Customer-Onboarding-Instructions</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css' />
+
+	<!-- use the font -->
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+			font-size: 48px;
+		}
+	</style>
+</head>
+
+<body>
+	<p th:text="${'Hello Dear ' + applicant + ','}"></p>
+	<p>Greetings from Chameleon Job Portal. A </p>
+	<p
+		th:text="${'A ' + ' application has been initiated on ' +  application_date + ' with our portal ' }">
+	</p>
+	<p>
+		1. Click on the link below.</p>
+	<p>	2. Sign up with the following email/phone number and complete your profile.
+	</p>
+
+	<p th:text="${'  a. ' + emailId}"></p>
+	<p th:text="${'  b. ' + phoneNo}"></p>
+
+	<p>
+		3. Complete the steps and submit the application.
+	</p>
+	<p>
+
+	</p>
+	<p>
+		Regards, <br />
+		<em th:text="${'Chameleon Team'}"></em>
+	</p>
+</body>
+
+</html>
